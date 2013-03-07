@@ -127,7 +127,7 @@ public class Jatsi {
 		System.out.println(pelaajat[1].getNimi());
 		System.out.println(pelaajat[1].getYhdistelm‰nArvo("kakkoset"));
 		
-		//Testi‰
+		//Testi‰ testin p‰‰lle
 		
 	}
 }
