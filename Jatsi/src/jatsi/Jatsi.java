@@ -126,5 +126,8 @@ public class Jatsi {
 		loadGame("lol");
 		System.out.println(pelaajat[1].getNimi());
 		System.out.println(pelaajat[1].getYhdistelmänArvo("kakkoset"));
+		
+		//Testiä
+		
 	}
 }
