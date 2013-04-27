@@ -14,18 +14,7 @@ import java.util.Collections;
 public  class ScoreClass implements Comparable{
 	 public int pisteet;
 	 public String nimi;
-	 
-	 public static void main(String[] asdasd){
-		 Pelaaja[] pelaajat = new Pelaaja[10];
-		 for(int i = 0; i<pelaajat.length; i++){
-			 pelaajat[i] = new Pelaaja("p" + i, i+1);
-		 }
-		 
-		 saveHighScore(pelaajat);
-		 displayHighscores();
-	 }
-	 
-	 
+	 	 
 	 
 	 public ScoreClass(String nimi, int pisteet){
 		 this.pisteet = pisteet;

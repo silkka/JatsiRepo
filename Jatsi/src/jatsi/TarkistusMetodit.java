@@ -11,7 +11,9 @@ public class TarkistusMetodit {
 	 */
 	
 	public static int getYhdistelmaPisteet(int[] nopat, String yhdistelma){
+		
 		Arrays.sort(nopat);
+		
 		switch(yhdistelma){
 		
 		case "ykköset":
@@ -63,18 +65,9 @@ public class TarkistusMetodit {
 			return -1;
 		
 		}
-		
-		
-		
-		
+					
 	}
 	
-	
-	
-
-
-
-
 	public static int getAlkuYhdistelmaPisteet(int[] nopat, int yhdistelma){
 		int summa = 0;
 		for(int i = 0; i<nopat.length; i++){
@@ -82,8 +75,7 @@ public class TarkistusMetodit {
 				summa += yhdistelma;
 			}
 		}
-		return summa;
-		
+		return summa;	
 	}
 	
 	public static int getPariPisteet(int[] nopat){
@@ -208,9 +200,6 @@ public class TarkistusMetodit {
 		
 		return jatsi;
 	}
-	
-	
-	
 	
 	
 }
