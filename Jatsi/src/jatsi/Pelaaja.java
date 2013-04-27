@@ -6,7 +6,9 @@ public class Pelaaja {
 	
 	private String nimi;
 	private HashMap<String,Integer> pisteet;
+	private int kokonaispisteet;
 	
+
 	public Pelaaja() {
 		//this.nimi = nimi;
 		pisteet = new HashMap<String,Integer>();
@@ -22,6 +24,23 @@ public class Pelaaja {
 			pisteet.put(Jatsi.yhdistelmät[i], -1);
 		}
 	}
+	public Pelaaja(String nimi, int kokonaispisteet) {
+		this.nimi = nimi;
+		pisteet = new HashMap<String,Integer>();
+		for(int i = 0;i<Jatsi.yhdistelmät.length;i++){
+			pisteet.put(Jatsi.yhdistelmät[i], -1);
+		}
+		this.kokonaispisteet = kokonaispisteet;
+	}
+	
+	public int getKokonaispisteet() {
+		return kokonaispisteet;
+	}
+
+	public void setKokonaispisteet(int kokonaispisteet) {
+		this.kokonaispisteet = kokonaispisteet;
+	}
+
 	
 	public String getNimi() {
 		return nimi;
